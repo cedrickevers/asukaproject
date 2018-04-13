@@ -1,0 +1,40 @@
+
+
+  *{
+                box-sizing: border-box;
+            }
+            /*definition taille de base*/
+            html {
+                font-size: 62.5%;
+            }
+            body{
+                color: #000;
+                background-color: #FFF;
+                margin: 0px;
+                font: 1.4rem Arial, Verdana, Helvetica, sans-serif;
+            }
+
+            section > * {
+                background-color: #20bffa;
+                color: inherit;
+                padding: 10px;
+            }
+
+            /* ================================================== 
+            /* #STYLES  POSITION
+            ================================================== */
+
+            /*definition du containeur flex 6 positions*/
+            .container-6 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            /*definition caractéristiques enfants flex item*/
+            .container-6 > * {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: calc(100% / 6 ) ;
+            }
+
